@@ -1,0 +1,172 @@
+[
+    {
+        "name": "Smartphone X",
+        "price": "799.99",
+        "description": "A high-end smartphone with a powerful camera.",
+        "ratings": "4.7",
+        "images": [
+            {
+                "public_id": "smartphone_x",
+                "url": "https://res.cloudinary.com/demo/image/upload/v1610000000/smartphone_x.jpg"
+            }
+        ],
+        "category": "Electronics",
+        "seller": "Ebay",
+        "stock": 25,
+        "numberOfReviews": 120,
+        "reviews": []
+    },
+    {
+        "name": "Wireless Headphones Pro",
+        "price": "199.99",
+        "description": "Noise-canceling wireless headphones with deep bass.",
+        "ratings": "4.6",
+        "images": [
+            {
+                "public_id": "headphones_pro",
+                "url": "https://res.cloudinary.com/demo/image/upload/v1610000000/headphones_pro.jpg"
+            }
+        ],
+        "category": "Electronics",
+        "seller": "Amazon",
+        "stock": 40,
+        "numberOfReviews": 95,
+        "reviews": []
+    },
+    {
+        "name": "4K Smart TV 55-inch",
+        "price": "899.99",
+        "description": "A 55-inch 4K UHD Smart TV with HDR support.",
+        "ratings": "4.8",
+        "images": [
+            {
+                "public_id": "4k_smart_tv",
+                "url": "https://res.cloudinary.com/demo/image/upload/v1610000000/4k_smart_tv.jpg"
+            }
+        ],
+        "category": "Electronics",
+        "seller": "BestBuy",
+        "stock": 15,
+        "numberOfReviews": 200,
+        "reviews": []
+    },
+    {
+        "name": "Gaming Laptop RTX 4060",
+        "price": "1499.99",
+        "description": "A powerful gaming laptop with RTX 4060 and 16GB RAM.",
+        "ratings": "4.5",
+        "images": [
+            {
+                "public_id": "gaming_laptop",
+                "url": "https://res.cloudinary.com/demo/image/upload/v1610000000/gaming_laptop.jpg"
+            }
+        ],
+        "category": "Electronics",
+        "seller": "Newegg",
+        "stock": 20,
+        "numberOfReviews": 180,
+        "reviews": []
+    },
+    {
+        "name": "Bluetooth Speaker Ultra",
+        "price": "129.99",
+        "description": "A compact and powerful Bluetooth speaker with rich sound.",
+        "ratings": "4.3",
+        "images": [
+            {
+                "public_id": "bluetooth_speaker",
+                "url": "https://res.cloudinary.com/demo/image/upload/v1610000000/bluetooth_speaker.jpg"
+            }
+        ],
+        "category": "Electronics",
+        "seller": "Walmart",
+        "stock": 50,
+        "numberOfReviews": 75,
+        "reviews": []
+    },
+    {
+        "name": "Smartwatch Series 7",
+        "price": "349.99",
+        "description": "A stylish smartwatch with health and fitness tracking.",
+        "ratings": "4.4",
+        "images": [
+            {
+                "public_id": "smartwatch_7",
+                "url": "https://res.cloudinary.com/demo/image/upload/v1610000000/smartwatch_7.jpg"
+            }
+        ],
+        "category": "Electronics",
+        "seller": "Apple Store",
+        "stock": 35,
+        "numberOfReviews": 220,
+        "reviews": []
+    },
+    {
+        "name": "Mechanical Keyboard RGB",
+        "price": "99.99",
+        "description": "A mechanical keyboard with customizable RGB lighting.",
+        "ratings": "4.5",
+        "images": [
+            {
+                "public_id": "mechanical_keyboard",
+                "url": "https://res.cloudinary.com/demo/image/upload/v1610000000/mechanical_keyboard.jpg"
+            }
+        ],
+        "category": "Electronics",
+        "seller": "Amazon",
+        "stock": 60,
+        "numberOfReviews": 130,
+        "reviews": []
+    },
+    {
+        "name": "Drone 4K Camera",
+        "price": "599.99",
+        "description": "A lightweight drone with a 4K camera and GPS tracking.",
+        "ratings": "4.6",
+        "images": [
+            {
+                "public_id": "drone_4k",
+                "url": "https://res.cloudinary.com/demo/image/upload/v1610000000/drone_4k.jpg"
+            }
+        ],
+        "category": "Electronics",
+        "seller": "BestBuy",
+        "stock": 22,
+        "numberOfReviews": 95,
+        "reviews": []
+    },
+    {
+        "name": "Portable Power Bank 20000mAh",
+        "price": "49.99",
+        "description": "A high-capacity power bank for fast charging on the go.",
+        "ratings": "4.2",
+        "images": [
+            {
+                "public_id": "power_bank",
+                "url": "https://res.cloudinary.com/demo/image/upload/v1610000000/power_bank.jpg"
+            }
+        ],
+        "category": "Electronics",
+        "seller": "Ebay",
+        "stock": 80,
+        "numberOfReviews": 60,
+        "reviews": []
+    },
+    {
+        "name": "Smart Home Security Camera",
+        "price": "199.99",
+        "description": "A wireless security camera with motion detection.",
+        "ratings": "4.6",
+        "images": [
+            {
+                "public_id": "security_camera",
+                "url": "https://res.cloudinary.com/demo/image/upload/v1610000000/security_camera.jpg"
+            }
+        ],
+        "category": "Electronics",
+        "seller": "Amazon",
+        "stock": 30,
+        "numberOfReviews": 145,
+        "reviews": []
+    }
+]
