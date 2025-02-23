@@ -41,6 +41,7 @@ exports.index = async (req, res, next) => {
  * @param {*} next 
  */
 exports.store = CatchAsyncErrorMiddleware(async (req, res, next) => {
+    req.body.user = req.user.id // Foregin Key
     const product = await Product.create(req.body);
     res.status(201).json({
         success: true,
