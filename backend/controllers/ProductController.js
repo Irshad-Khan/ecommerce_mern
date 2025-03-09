@@ -130,3 +130,63 @@ exports.delete = async (req, res, next) => {
          return next(new ErrorHandler(error.message,error.statusCode))
     }
 }
+
+exports.createProductReview = async (req,res,next) => {
+    try {
+        const { rating, comments, productId    } = req.body;
+        const review = {
+            user: req.user._id,
+            name: req.user.name,
+            rating: Number(rating),
+            comment: comments,
+        };
+
+        const product = await Product.findById(productId);
+        if(!product) {
+            return next(new ErrorHandler('Product not found',404))
+        }
+        const isReviewed = product.reviews.find(
+            r => r.user.toString() === req.user._id.toString()
+        )
+
+        if (isReviewed) {
+
+           product.reviews.forEach(review =>{
+               if(review.user.toString() === req.user._id.toString()){
+                   console.log('inside')
+                   review.rating = Number(rating);
+                   review.comment = comments;
+               }
+           })
+        }else{
+            product.reviews.push(review);
+            product.numberOfReviews = product.reviews.length;
+        }
+
+        product.rating = product.reviews.reduce((acc, review) => acc + review.rating, 0) / product.reviews.length;
+        await product.save({validateBeforeSave: false});
+        res.status(201).json({
+            success: true,
+            message: "Review added successfully. Thanks for your feedback."
+        });
+
+    }catch (error) {
+        return next(new ErrorHandler(error.message,error.statusCode))
+    }
+}
+
+exports.getProductReviews = async (req, res, next) => {
+    try {
+        const product = await Product.findById(req.params.id);
+        if (!product) {
+            return next(new ErrorHandler('Product not found', 404));
+        }
+        res.status(200).json({
+            success: true,
+            message: 'Product reviews fetched successfully',
+            data: product.reviews
+        });
+    } catch (error) {
+        return next(new ErrorHandler(error.message, error.statusCode));
+    }
+}
