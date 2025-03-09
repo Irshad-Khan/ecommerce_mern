@@ -12,6 +12,10 @@ router.route('/admin/product/delete/:id')
     .delete(isAuthenticatedUser,authorizedRoles('admin'),ProductController.delete);
 router.route('/admin/product/update/:id')
     .put(isAuthenticatedUser,authorizedRoles('admin'),ProductController.update);
-
+router.route('/review')
+    .put(isAuthenticatedUser,ProductController.createProductReview);
+router.route('/review')
+    .put(isAuthenticatedUser,ProductController.createProductReview);
+router.route('/product/reviews/:id').get(ProductController.getProductReviews);
 
 module.exports = router;
